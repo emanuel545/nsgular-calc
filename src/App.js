@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Formulario from './components/Formulario';
+import { CalculadorTermino } from './components/Serie';
 
-function App() {
+const App = () => {
+  const [resultado, setResultado] = useState(null);
+
+  const handleNumeroSubmit = (numero) => {
+    setResultado(numero);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="app-container">
+    <h1 className="title">Calculadora de términos de la serie</h1>
+    <Formulario onNumeroSubmit={handleNumeroSubmit} />
+    {resultado && (
+      <div className="result-container">
+        <CalculadorTermino numero={resultado} />
+      </div>
+    )}
+  </div>
   );
-}
+};
 
 export default App;

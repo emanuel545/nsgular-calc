@@ -1,38 +1,110 @@
-.App {
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Color de fondo */
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* Color de fondo */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
   text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333; /* Color de texto */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.result-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Color de fondo */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container {
+  background-color: #f9f9f9; /* Color de fondo */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333; /* Color de texto */
 }
 
-.App-link {
-  color: #61dafb;
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+.form-container {
+  background-color: #f9f9f9; /* Color de fondo */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Animación de transición */
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333; /* Color de texto */
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Animación de transición */
+}
+
+.form-button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el ratón */
 }
